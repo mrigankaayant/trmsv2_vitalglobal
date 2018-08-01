@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        
+       <!--  <property name="hibernate.connection.password">AyantAstra422</property>
+        <property name="hibernate.connection.url">jdbc:mysql://ayant.cnwlqalaomiq.us-east-2.rds.amazonaws.com:3306/ayant_trmsv2?useSSL=true</property>
+        <property name="hibernate.connection.username">ayant</property> -->
+        
+        <property name="hibernate.connection.password">ayantprodroot</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ayant_trmsv2</property>
+        <property name="hibernate.connection.username">root</property>
+        
+        <property name="hibernate.connection.verifyServerCertificate">false</property>
+        <property name="hibernate.connection.requireSSL">true</property>
+        <property name="hibernate.connection.autoReconnect">true</property>
+        
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Extension" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Freepool" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.CandidateSkills" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.FollowUp" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.States" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.CandidateCheckList" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.TaskHasDocuments" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.CandidateGroup" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.ContactAddress" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Immigration" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Department" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.DocumentsType" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Trainer" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.TrainerInvoice" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Documents" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.CandidateRemarks" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Designation" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.PhoneRecording" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.ProfileImage" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.CandidatePayment" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.TaskStatus" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.ProgrammeSchedule" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.TaskRole" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.EmployeeHasTask" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.UserProfile" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Employee" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Countries" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.CandidateVisa" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Cities" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.EducationCertification" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Role" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.IncentiveStructure" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.Candidate" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.TaskTag" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.CheckListType" />
+        <mapping class="com.ayantsoft.vitalglobal.pojo.CandidateCourse" />
+    </session-factory>
+</hibernate-configuration>
